@@ -1,6 +1,7 @@
 package main
 
 import (
+	"../pkg/scap"
 	"bytes"
 	"fmt"
 	"log"
@@ -9,6 +10,9 @@ import (
 )
 
 func main() {
+	sr := scap.ScapRunner{}
+	sr.SetHost()
+	fmt.Println(sr)
 	cmd2 := "grep -i x11forwarding /etc/ssh/sshd_config | grep -v '^#'"
 	cmd := exec.Command("bash", "-c", cmd2)
 	//	cmd.Stdin = strings.NewReader("-al")
