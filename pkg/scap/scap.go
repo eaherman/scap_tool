@@ -53,7 +53,6 @@ type ScapRunner struct {
 
 func (sr *ScapRunner) SetHost() {
 	sr.Test = "Test"
-	sr.Name = "Test Host Name"
+	sr.Name = "Name"
 	fmt.Println(sr.ScapScans)
-
 }
