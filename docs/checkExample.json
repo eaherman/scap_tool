@@ -1,0 +1,21 @@
+{"stigs": 
+  [
+    {
+      "name": "string",
+      "version": "int",
+      "revision": "int",
+      "rules":
+      [
+        {
+          "rule_id": "string",
+          "vuln_id": "string",
+          "checkCommand": "string",
+          "expectedResult": "string",
+          "checkFile": "string",
+          "fileContents":"string",
+          "fixCommand": "string"
+        }
+      ]
+    }
+  ]
+}

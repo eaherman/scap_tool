@@ -35,9 +35,13 @@ type Host struct {
 }
 
 type Options struct {
-	log          string
-	outputFormat string
-	inputFormat  string
+	Log     bool
+	Checks  string
+	Results string
+	Testing bool
+	XCCDF   bool
+	JSON    bool
+	CKL     bool
 }
 
 type ScapScans struct {
