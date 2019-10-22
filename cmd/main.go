@@ -1,18 +1,26 @@
 package main
 
-import (
-	"../pkg/scap"
-	"flag"
-	//	"bytes"
-	"fmt"
-	//	"log"
-	//	"os/exec"
-	//	"strings"
-)
-
 func main() {
 
-	sr := scap.ScapRunner{}
+
+
+
+
+
+/*
+	file, err := os.Open("/Users/EricMacBook/Documents/test-benchmark.xml") // For read access.
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	json, err := xj.Convert(file)
+	if err != nil {
+		panic("That's embarrassing...")
+	}
+
+	fmt.Println(json.String())
+*/
+/*	sr := scap.ScapRunner{}
 
 	inFileHelp := "The json file with the checks. Can be a single json file, a zip file of " +
 		"multiple json files, or a tar file with multiple json files"
@@ -27,7 +35,7 @@ func main() {
 	flag.Parse()
 
 	fmt.Println(sr)
-
+*/
 	//	sr := scap.ScapRunner{}
 	//	sr.SetHost()
 	//	fmt.Println(sr)

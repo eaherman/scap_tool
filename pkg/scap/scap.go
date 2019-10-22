@@ -9,7 +9,19 @@ type Stig struct {
 	Release int
 	Version int
 	Name    string
-	Checks  []Check
+	Rules   []Rule
+}
+
+type Rule struct {
+	RuleID string
+	VulnID string
+	Checks []Check
+	Fix
+}
+
+type Fix struct {
+	Command string
+	script  string
 }
 
 type Check struct {

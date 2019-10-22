@@ -7,13 +7,25 @@
       "rules":
       [
         {
-          "rule_id": "string",
-          "vuln_id": "string",
-          "checkCommand": "string",
-          "expectedResult": "string",
-          "checkFile": "string",
-          "fileContents":"string",
-          "fixCommand": "string"
+          "ruleID": "string",
+          "vulnID": "string",
+          "checkCommands":
+          [
+            {
+              "type": "command | file | script",
+              "command": "string",
+              "contains": "string",
+              "regex": "string",
+              "expectedResult": "string",
+              "script": "string",
+              "checkFile": "string",
+            }
+          ],
+          "fixCommand":
+          {
+            "command": "string",
+            "script": "string"
+          }
         }
       ]
     }
