@@ -3,13 +3,13 @@
     {
       "name": "string",
       "version": "int",
-      "revision": "int",
+      "release": "int",
       "rules":
       [
         {
           "ruleID": "string",
           "vulnID": "string",
-          "checkCommands":
+          "checks":
           [
             {
               "type": "command | file | script",
@@ -18,10 +18,10 @@
               "regex": "string",
               "expectedResult": "string",
               "script": "string",
-              "checkFile": "string",
+              "checkFile": "string"
             }
           ],
-          "fixCommand":
+          "fix":
           {
             "command": "string",
             "script": "string"
